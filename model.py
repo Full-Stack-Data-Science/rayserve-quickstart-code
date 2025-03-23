@@ -6,7 +6,7 @@ import pandas as pd
 class HousePricePredictor:
     def __init__(self):
         # Load pre-trained model (Assume it's a scikit-learn regression model)
-        self.model = joblib.load("../models/house_price_model.joblib")
+        self.model = joblib.load("models/house_price_model.joblib")
 
     def predict(self, features: list) -> float:
         # Convert input to a DataFrame
